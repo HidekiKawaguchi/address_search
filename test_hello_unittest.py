@@ -13,7 +13,7 @@ def mul(x, y):
     return x * y
 
 
-def mod(x, y):
+def div(x, y):
     return x / y
 
 
@@ -25,10 +25,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(1, sub(4, 3))  # 引き算
 
     def test_2つの整数の積を計算できる(self):
-        self.assertEqual(1, mul(5, 3))  # 積
+        self.assertEqual(15, mul(5, 3))  # 積
 
     def test_2つの整数の商を計算できる(self):
-        self.assertEqual(1, mod(5, 3))  # 積
+        self.assertEqual(2, div(6, 3))  # 商
 
 
 if __name__ == '__main__':
